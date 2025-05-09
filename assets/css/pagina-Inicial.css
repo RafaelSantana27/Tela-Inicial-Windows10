@@ -1,0 +1,206 @@
+/* Importa estilos globais da tela inicial */
+@import url("index.css");
+
+/* BODY - Centralização do conteúdo */
+body {
+    display: flex;
+
+    /* justify-content: start; */
+    /* align-items: center; */
+
+    background-image: url(../img/TelaInicial-W.jpg);
+    color: white;
+}
+
+.div-pai {
+    margin-left: 10px;
+   /* border: x solid red;  */
+   /* width: 10px; */
+   height: 100%;
+   /* display: flex;
+   flex-direction: column; */
+}
+
+.icon-area-trabalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 1px 0px black;
+}
+
+.icon-area-trabalho img {
+    width: 60px;
+}
+
+.icon-area-trabalho p {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+/* *****************************************************
+ */
+/* .barra-de-tarefas {
+    position: absolute;
+    bottom: 0px;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+    cursor: pointer;
+    
+} */
+
+.barra-de-tarefas {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Alinha um grupo à esquerda e outro à direita */
+    align-items: center;
+    padding: 0 10px;
+    background-color: rgb(59, 59, 59);
+    height: 50px;
+    /* box-shadow: 0 -1px 4px rgba(0,0,0,0.5); */
+}
+
+.menu-de-tarefas {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-de-tarefas img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-de-tarefas2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.menu-de-tarefas2 img {
+    width: 18px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.menu-de-tarefas img,
+.menu-de-tarefas2 img,
+.menu-de-tarefas2 div {
+    cursor: pointer;
+}
+
+
+#notificacao {
+    width: 30px;
+    height: 25px;
+}
+
+
+
+
+
+/* flex-direction: row; */
+/* border: 1px solid rgb(236, 240, 19); */
+/* .menu-de-tafedas-lado-direto {
+    display: flex;
+    justify-content: end;
+} */
+
+/* .menu-de-tarefas {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.menu-de-tarefas2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    margin-left: 5px;
+    padding: 5px;
+} */
+
+/* .menu-de-tarefas img,
+.menu-de-tarefas2 img {
+    width: 30px;
+} */
+
+
+
+/* Container Principal de LOGIN */
+/* .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    color: white;
+
+    width: 200px;
+} */
+
+/* Estilização da imagem usuario  */
+/* .login img#user {  
+    width: 200px;
+    background-color: gray;
+
+    padding: 40px;
+    border-radius: 50%;
+} */
+
+/* Estilização 'Nome Usuario'  */
+/* .login h1 {  
+    font-size: 40px;
+} */
+
+/* Div:  Input e Icon dentro Login  */
+/* .login-input  {
+    display: flex;
+    border: 2px solid rgb(128, 128, 128, 0.5);
+} */
+
+/* Estilização INPUT */
+/* .login-input input {  
+    font-size: 18px;
+    color: #474646;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-right: 2px solid rgb(128, 128, 128, 0.5); ;
+    padding: 10px 5px;
+    outline: none;
+    width: 300px; */
+/* } */
+
+/* Estilização do placeholder (texto dentro do input) */
+/* .login-input input::placeholder {
+    color: rgba(88, 88, 88, 0.6);
+} */
+
+/* Estilização do Botão (com icone) */
+/* .login-input button  {
+    width: 45px;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.5);
+    cursor: pointer;
+} */
+
+/* Estilização do Icone */
+/* .login-input img {
+    width: 25px;
+    margin: 0 5px;
+} */
