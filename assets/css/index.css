@@ -23,7 +23,7 @@ html, body{
 }
 
 /* Classe ativada ao clicar e mudar de página */
-body.animate-out {
+body.animacao-saida {
     transform: translateY(-100%);
 }
 
