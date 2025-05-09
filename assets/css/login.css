@@ -1,17 +1,24 @@
 /* Importa estilos globais da tela inicial */
 @import url("index.css");
 
-/* BODY - Centralização do conteúdo */
+/* BODY - Efeito de transition */
 body {
+    transition: transform 0.5s ease-out;
+}
+/* Container com efeito borrado */
+.efeitoDesfoque {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* compatibilidade com Safari */
     display: flex;
     justify-content: center;
     align-items: center;
-
-    transition: transform 0.5s ease-out;
+    flex-direction: column;
 }
 
-/* Container Principal de LOGIN */
-.login {
+/* Container de LOGIN */
+.area-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,10 +28,11 @@ body {
     color: white;
 
     width: 200px;
+    backdrop-filter: blur();
 }
 
 /* Estilização da imagem usuario  */
-.login img#user {  
+.area-login img#user {  
     width: 200px;
     background-color: gray;
 
@@ -33,17 +41,17 @@ body {
 }
 
 /* Estilização 'Nome Usuario'  */
-.login h1 {  
+.area-login h1 {  
     font-size: 40px;
 }
 
-/* Div:  Input e Icon dentro Login  */
-.login-input  {
+/* Div: Formulario Input e Icon dentro Login  */
+.login-input {
     display: flex;
     border: 2px solid rgb(128, 128, 128, 0.5);
 }
 
-/* Estilização INPUT */
+/* Estilização Formulario INPUT */
 .login-input input {  
     font-size: 18px;
     color: #474646;
@@ -72,4 +80,29 @@ body {
 .login-input img {
     width: 25px;
     margin: 0 5px;
+}
+
+/* Estilização mensagem de ERRO */
+.login-input-erro {
+    display: none;
+    width: 350px;
+    margin-top: -10px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+/* Estilização mensagem de ERRO => Paragrafo */
+.login-input-erro p {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* Estilização mensagem de ERRO => Botão */
+.login-input-erro button {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(211, 211, 211, 0.8);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
 }
