@@ -5,13 +5,21 @@ const inputSenha = document.getElementById('login');
 
 const btn = document.getElementById('btn');
 const btnErro = document.getElementById('btnErro');
+const loader = document.querySelector('.loader-container');
 
 
 btn.addEventListener('click', function(){
   
   if(inputSenha.value === 'abc123') {
       console.log('Senha está correta');
-      window.location.href = 'pagina_Inicial.html';
+      
+      // Exibe o loader
+      loader.style.display = 'flex';
+
+      // Redireciona após delay
+      setTimeout(() => {
+          window.location.href = 'pagina_Inicial.html';
+      }, 2500);
   }else {
     console.log("A senha está incorreta tente novamente");
     formLogin.style.display = "none";
